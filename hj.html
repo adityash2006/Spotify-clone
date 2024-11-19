@@ -1,0 +1,21 @@
+<body><div class="container">
+    <button type="button" onclick="myfucntion()" >count</button>
+    <p id="1">
+        <p id="2"></p>
+    </p>
+    </div>
+
+    <script>
+    const add = (function () {
+        let counter = 0 
+        return function() {
+            counter++;
+            return counter;
+        }
+    })();
+    function myfucntion() {
+        document.getElementById("1").innerHTML = add();
+    }
+    </script>
+</body>
+</html>
